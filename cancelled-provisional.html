@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Short-Term Rental Registration Cancelled</title>
+</head>
+<body style="margin:0; padding:0; font-family: Arial, sans-serif; background-color:#f4f4f4;">
+  <table width="100%" cellpadding="0" cellspacing="0" style="padding: 20px;">
+    <tr>
+      <td align="center">
+        <table width="600" cellpadding="0" cellspacing="0" style="background-color:#ffffff; padding: 30px; color: #666; border-radius: 6px;">
+          <!-- Logo and Header Info -->
+          <tr>
+            <td style="padding-top: 20px;">
+              <img src="/strr-web/assets/images/gov_bc_logo_vert.png" alt="BC Logo" style="display:block;">
+              <h2 style="margin-top: 10px; color: #000000;">Short-Term Rental Registration Cancelled</h2>
+              <p><strong>Registration Number:</strong><br> {{registration_number}}</p>
+              <p><strong>Short-Term Rental Nickname:</strong><br> {{nickname}}</p>
+              <p><strong>Short-Term Rental Address:</strong><br>{{address}}</p>
+              <p>Your short-term rental provisionally approved registration number has been <strong>cancelled effective immediately.</strong></p>
+            </td>
+          </tr>
+
+          <!-- Cancellation Details -->
+          <tr>
+            <td style="padding-top: 20px;">
+              <h3 style="color: #000000;">Cancellation Details</h3>
+              <p>
+                A Notice of Consideration letter was sent to <a href="mailto:{{email}}">{{email}}</a> on <strong>{{notice_date}}</strong>. The notice informed you that your short-term rental's provisionally approved registration was under review, outlined the necessary steps to take, and allowed you to respond by the deadline of <strong>{{response_deadline}}</strong>.
+              </p>
+              <p>
+                After a fulsome review of all documents provided, it appears your provisionally approved registration does not meet all the registration requirements.
+              </p>
+
+              <!-- Example bullet points -->
+              <ul style="padding-left: 20px;">
+                <li>{{custom_body}}
+              </ul>
+
+              <p>
+                Your short-term rental provisionally approved registration number has been cancelled <strong>effective immediately</strong>. For more information, please contact <a href="mailto:STR.Registry@gov.bc.ca">STR.Registry@gov.bc.ca</a>.
+              </p>
+            </td>
+          </tr>
+
+          <!-- What Happens Next -->
+          <tr>
+            <td style="padding-top: 30px;">
+              <h3 style="color: #000000;">What Happens Next</h3>
+              <p>
+                <strong>Reapply:</strong> If you did not submit your required documents in time, you can <a href="https://gov.bc.ca/reapply-str">reapply to register your short-term rental</a>. Before you do so, ensure you are in compliance with all local bylaws and have all required document ready.
+              </p>
+              <p>
+                <strong>Request a Review:</strong> If you choose to request a review of the cancellation decision, please be aware that only <strong>very limited</strong> circumstances are eligible for a review.
+              </p>
+              <p>
+                To learn more about next step options, visit our <a href="https://gov.bc.ca/str">website</a>.
+              </p>
+            </td>
+          </tr>
+
+          <!-- Footer -->
+          <tr>
+            <td style="padding-top: 20px; color: #666;">
+              <p>
+                *Under section 10(2) of the <em style="font-style: italic;">Short-Term Rental Accommodations Act</em> (the"Act"), the Registrar may cancel or suspend a registration if it does not meet the short-term rental offer registration requirements under section 6 of the Act.
+              </p>
+              <p style="margin-top: 20px;">
+                Sincerely,<br>
+                {{assignee_name}}<br>
+                Short-Term Rental Branch<br>
+                Ministry of Housing and Municipal Affairs
+              </p>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>
