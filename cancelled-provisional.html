@@ -4,14 +4,14 @@
   <meta charset="UTF-8">
   <title>Short-Term Rental Registration Cancelled</title>
 </head>
-<body style="margin:0; padding:0; font-family: Arial, sans-serif; background-color:#f4f4f4;">
+<body style="margin:0; padding:0; font-family: 'BC Sans', 'Noto Sans', 'Open Sans', Arial, sans-serif; background-color:#f4f4f4;">
   <table width="100%" cellpadding="0" cellspacing="0" style="padding: 20px;">
     <tr>
       <td align="center">
         <table width="600" cellpadding="0" cellspacing="0" style="background-color:#ffffff; padding: 30px; color: #666; border-radius: 6px;">
           <!-- Logo and Header Info -->
           <tr>
-            <td style="padding-top: 20px;">
+            <td style="padding-top: 20px; padding-bottom: 10px;">
               <img src="/strr-web/assets/images/gov_bc_logo_vert.png" alt="BC Logo" style="display:block;">
               <h2 style="margin-top: 10px; color: #000000;">Short-Term Rental Registration Cancelled</h2>
               <p><strong>Registration Number:</strong><br> {{registration_number}}</p>
@@ -21,9 +21,11 @@
             </td>
           </tr>
 
+          <td style="border-top:1px solid #cccccc; height:1px; line-height:1px; font-size:1px;">&nbsp;</td>
+          
           <!-- Cancellation Details -->
           <tr>
-            <td style="padding-top: 20px;">
+            <td style="padding-top: 10px; padding-bottom: 10px;">
               <h3 style="color: #000000;">Cancellation Details</h3>
               <p>
                 A Notice of Consideration letter was sent to <a href="mailto:{{email}}">{{email}}</a> on <strong>{{notice_date}}</strong>. The notice informed you that your short-term rental's provisionally approved registration was under review, outlined the necessary steps to take, and allowed you to respond by the deadline of <strong>{{response_deadline}}</strong>.
@@ -32,7 +34,7 @@
                 After a fulsome review of all documents provided, it appears your provisionally approved registration does not meet all the registration requirements.
               </p>
 
-              <!-- Example bullet points -->
+              <!-- Custom Email Body -->
               <ul style="padding-left: 20px;">
                 <li>{{custom_body}}
               </ul>
@@ -43,9 +45,11 @@
             </td>
           </tr>
 
+          <td style="border-top:1px solid #cccccc; height:1px; line-height:1px; font-size:1px;">&nbsp;</td>
+
           <!-- What Happens Next -->
           <tr>
-            <td style="padding-top: 30px;">
+            <td style="padding-top: 10px; padding-bottom: 10px;">
               <h3 style="color: #000000;">What Happens Next</h3>
               <p>
                 <strong>Reapply:</strong> If you did not submit your required documents in time, you can <a href="https://gov.bc.ca/reapply-str">reapply to register your short-term rental</a>. Before you do so, ensure you are in compliance with all local bylaws and have all required document ready.
@@ -59,13 +63,22 @@
             </td>
           </tr>
 
+          <td style="border-top:1px solid #cccccc; height:1px; line-height:1px; font-size:1px;">&nbsp;</td>
+
           <!-- Footer -->
           <tr>
-            <td style="padding-top: 20px; color: #666;">
+            <td style="padding-top: 10px; padding-bottom: 10px; color: #666;">
               <p>
-                *Under section 10(2) of the <em style="font-style: italic;">Short-Term Rental Accommodations Act</em> (the"Act"), the Registrar may cancel or suspend a registration if it does not meet the short-term rental offer registration requirements under section 6 of the Act.
+                *Under section 10(2) of the <em style="font-style: italic;">Short-Term Rental Accommodations Act</em> (the "Act"), the Registrar may cancel or suspend a registration if it does not meet the short-term rental offer registration requirements under section 6 of the Act.
               </p>
-              <p style="margin-top: 20px;">
+          </tr>
+
+          <td style="border-top:1px solid #cccccc; height:1px; line-height:1px; font-size:1px;">&nbsp;</td>
+
+          <!-- Signature -->
+          <tr>
+            <td style="padding-top: 10px; padding-bottom: 10px; color: #666;">
+              <p>
                 Sincerely,<br>
                 {{assignee_name}}<br>
                 Short-Term Rental Branch<br>
